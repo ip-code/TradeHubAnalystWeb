@@ -1,0 +1,19 @@
+.navigation-container {
+    height:50px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.navigation-link-container {
+    padding: 15px;
+}
+.navigation-link {
+    margin-right:30px;
+    padding:5px 10px 5px 10px;
+    color: white;
+    text-decoration: none;
+}
+.navigation-link:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}

@@ -1,0 +1,20 @@
+.pages-download-links {
+    border:black 1px solid;
+    padding: 5px;
+    margin: 5px 0px 5px 0px;
+}
+
+.pages-download-image-app {
+    width:400px;
+    height:auto;
+    padding:10px;
+}
+
+.pages-download-image-hauling-grid {
+    width:auto;
+    height:215px;
+}
+
+.pages-download-indented {
+    padding-left:25px;
+}

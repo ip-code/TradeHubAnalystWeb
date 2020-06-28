@@ -1,0 +1,10 @@
+.footer-container {
+    height: 50px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: left;
+}
+
+.footer-copyright {
+    padding: 12px 0px 0px 15px;
+}

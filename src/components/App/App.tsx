@@ -1,0 +1,31 @@
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import logo from '../../assets/logo.svg';
+import './App.css';
+import Header from '../Layout/Header/Header';
+import Navigation from '../Layout/Navigation/Navigation';
+import Footer from '../Layout/Footer/Footer';
+import Download from '../Pages/Download/Download';
+import News from '../Pages/News/News';
+import About from '../Pages/About/About';
+import Contact from '../Pages/Contact/Contact';
+
+function App() {
+    return (
+        <Router>
+            <div className="App">
+                <Header />
+                <Navigation />
+                <Switch>
+                    <Route path='/' exact component={Download} />
+                    <Route path='/about' component={About} />
+                    <Route path='/news' component={News} />
+                    <Route path='/contact' component={Contact} />
+                </Switch>
+                <Footer />
+            </div>
+        </Router >
+    );
+}
+
+export default App;

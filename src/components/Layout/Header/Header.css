@@ -1,0 +1,27 @@
+.header {
+    height:238px;
+    background-image: url('./assets/header_bg.jpg');
+    background-repeat: no-repeat;
+}
+
+.header-title
+{
+    height: 115px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    
+}
+
+.header-main-title {
+    color: white;
+    font-size: 3em;
+    padding: 5px;
+}
+
+.header-sub-title {
+    color: gray;
+    font-size: 1em;
+    margin: 0;
+}
