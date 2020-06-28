@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import logo from '../../assets/logo.svg';
 import './App.css';
 import Header from '../Layout/Header/Header';
 import Navigation from '../Layout/Navigation/Navigation';
@@ -9,6 +8,7 @@ import Download from '../Pages/Download/Download';
 import News from '../Pages/News/News';
 import About from '../Pages/About/About';
 import Contact from '../Pages/Contact/Contact';
+import Version from '../Pages/Version/Version';
 
 function App() {
     return (
@@ -21,6 +21,7 @@ function App() {
                     <Route path='/about' component={About} />
                     <Route path='/news' component={News} />
                     <Route path='/contact' component={Contact} />
+                    <Route path='/version' component={Version} />
                 </Switch>
                 <Footer />
             </div>
