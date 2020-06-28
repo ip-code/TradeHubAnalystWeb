@@ -8,7 +8,6 @@ import Download from '../Pages/Download/Download';
 import News from '../Pages/News/News';
 import About from '../Pages/About/About';
 import Contact from '../Pages/Contact/Contact';
-import Version from '../Pages/Version/Version';
 
 function App() {
     return (
@@ -21,7 +20,6 @@ function App() {
                     <Route path='/about' component={About} />
                     <Route path='/news' component={News} />
                     <Route path='/contact' component={Contact} />
-                    <Route path='/version' component={Version} />
                 </Switch>
                 <Footer />
             </div>
