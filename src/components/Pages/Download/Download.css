@@ -5,16 +5,32 @@
 }
 
 .pages-download-image-app {
-    width:400px;
+    width:350px;
     height:auto;
-    padding:10px;
+    padding:50px 0px 0px 20px;
 }
 
-.pages-download-image-hauling-grid {
+.pages-download-image-hauling {
     width:auto;
-    height:215px;
+    height:199px;
+    padding:10px 0px 10px 0px;
 }
 
 .pages-download-indented {
     padding-left:25px;
+}
+
+.pages-download-column-left {
+    float:left;
+    width: 55%
+}
+
+.pages-download-column-right {
+    float:left;
+    width: 45%
+}
+.pages-download-image-database {
+    width:auto;
+    height:595px;
+    padding:10px 0px 10px 0px;
 }

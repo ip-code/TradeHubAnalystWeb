@@ -4,6 +4,13 @@
     padding-left:50px;
 }
 
-.pages-about-right-column {
+.pages-about-column-left {
+    float: left;
+    width: 50%;
+}
+
+.pages-about-column-right {
+    float: left;
     padding-top: 30px;
+    width:50%;
 }

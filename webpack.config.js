@@ -1,5 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+
 module.exports = {
     // webpack will take the files from ./src/index
     entry: './src/index',
@@ -39,9 +42,27 @@ module.exports = {
         historyApiFallback: true,
     },
     plugins: [
+        new CleanWebpackPlugin(),
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: 'public/manifest.json',
+                    to: path.join(__dirname, 'dist')
+                },
+                {
+                    from: 'public/robots.txt',
+                    to: path.join(__dirname, 'dist')
+                },
+                {
+                    from: 'public/logo152.png',
+                    to: path.join(__dirname, 'dist')
+                },
+            ],
+
+        }),
         new HtmlWebpackPlugin({
             template: './public/index.html',
             favicon: './public/favicon.ico'
-        })
+        }),
     ]
 };
